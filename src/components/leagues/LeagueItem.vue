@@ -73,7 +73,7 @@ const selectedColorFont = ref('#41B883');
 
 <style scoped>
 .card {
-  width: 25rem;
+  width: 30rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 1rem;
