@@ -3,18 +3,16 @@ import { ref } from 'vue';
 import LeagueList from './components/leagues/LeagueList.vue';
 import LeagueForm from './components/leagues/LeagueForm.vue';
 import LeaguesData from './data/LeaguesData';
+import type { ILeague } from './interfaces/ILeague';
 
-const addLeague = (newLeague: { id: number; name: string; description: string; teams: number; ubication: string }) => {
+const addLeague = (newLeague: ILeague) => {
   const nameExists = LeaguesData.some(league => league.name === newLeague.name);
 
   if (nameExists) {
     alert('Ya existe una liga con este nombre. Por favor, elige un nombre único.');
     return;
   }
-
-  LeaguesData.push({
-    ...newLeague,
-  });
+  LeaguesData.push(newLeague);
   updateKey.value += 1;
   alert(`Liga agregada correctamente:
     ID: ${newLeague.id}
