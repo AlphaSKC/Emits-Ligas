@@ -33,7 +33,7 @@ const submit = () => {
 const validateForm = () => {
   clearErrors();
 
-  if (name.value.length < 5) {
+  if (name.value.length < 5 || name.value.trim() === ''){
     errors.value.push({ field: 'name', message: 'El nombre de la liga debe tener al menos 5 carácteres' });
   }
 

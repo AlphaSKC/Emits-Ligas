@@ -76,7 +76,6 @@ const selectedColorFont = ref('#41B883');
   width: 30rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin: 1rem;
   padding: 1rem;
   box-shadow: 0 4px 8px rgb(255, 255, 255);
 }
@@ -91,7 +90,7 @@ const selectedColorFont = ref('#41B883');
     font-size: 2rem;
   }
 
-  & h2 {
+  & h2{
     margin-right: 1rem;
     font-size: 2rem;
     font-weight: bold;
@@ -122,10 +121,4 @@ p{
   }
 }
 
-.color-options label {
-  margin-right: 1rem;
-}
-
-.color-options input {
-  cursor: pointer;
-}</style>
+</style>

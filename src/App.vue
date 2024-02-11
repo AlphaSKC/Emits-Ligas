@@ -40,15 +40,20 @@ const updateKey = ref(0);
 </template>
 
 <style scoped>
+
 .container {
+  width: 100%;
   display: flex;
   margin: 1rem;
-  justify-content: space-evenly;
 }
 .section{
   width: fit-content;
+  height: fit-content;
   text-align: center;
-  margin: 0 2rem;
+  margin: 0 .5rem;
+  padding: 1rem;
+  border: 1px solid #41B883;
+  border-radius: 15px;
   & h2{
     font-size: 2rem;
     font-weight: bold;
